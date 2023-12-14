@@ -1,15 +1,14 @@
 package xadrez_system.aplicacao;
 
-import xadrez_system.boardgame.Position;
+import xadrez_system.boardgame.Board;
 
 public class Programa {
 	
 	public static void main(String[] args) {
 	
-		Position position = new Position(3,5);
+		Board board = new Board(8, 8);
 		
-		
-		System.out.println(position);
+		System.out.println();
 		
 	}
 
