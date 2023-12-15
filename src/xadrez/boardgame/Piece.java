@@ -1,4 +1,4 @@
-package xadrez_system.boardgame;
+package xadrez.boardgame;
 
 public class Piece {
 	
