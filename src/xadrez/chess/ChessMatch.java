@@ -1,6 +1,9 @@
 package xadrez.chess;
 
 import xadrez.boardgame.Board;
+import xadrez.boardgame.Position;
+import xadrez.chess.pieces.King;
+import xadrez.chess.pieces.Rook;
 
 public class ChessMatch {
 
@@ -24,6 +27,11 @@ public class ChessMatch {
 		}
 
 		return mat;
+	}
+	
+	public void initialSetup() {
+		board.palcePiece(new Rook(board,Color.WHITE), new Position(2,1));
+		board.palcePiece(new King(board,Color.BLACK), new Position(0,4));
 	}
 
 }
