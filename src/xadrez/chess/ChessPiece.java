@@ -12,7 +12,7 @@ public class ChessPiece extends Piece{
 		this.color = color;
 	}
 
-	protected Color getColor() {
+	public Color getColor() {
 		return color;
 	}
 
