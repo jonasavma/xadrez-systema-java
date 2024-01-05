@@ -1,6 +1,6 @@
 package xadrez.chess;
 
 public enum Color {
-	BLACK, WHITE;
+	BLACK, WHITE,GREEN;
 
 }
