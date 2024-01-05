@@ -3,6 +3,7 @@ package xadrez.aplicacao;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import xadrez.chess.ChessMatch;
 import xadrez.chess.ChessPiece;
 import xadrez.chess.ChessPosition;
 import xadrez.chess.Color;
@@ -49,6 +50,14 @@ public class UI {
 		}
 	}
 
+	public static void printMach(ChessMatch chessMatch) {
+		printBoard(chessMatch.getPieces());
+		System.out.println();
+		System.out.println("Turn :" + chessMatch.getTurn());
+		System.out.println("Waiting player:" + chessMatch.getCurrentPlayer());
+
+	}
+
 	public static void printBoard(ChessPiece[][] pieces) {
 		for (int i = 0; i < pieces.length; i++) {
 			System.out.print((8 - i) + " ");
@@ -82,7 +91,7 @@ public class UI {
 			System.out.print("-" + ANSI_RESET);
 		} else {
 			if (piece.getColor() == Color.WHITE) {
-				System.out.print(ANSI_WHITE + piece + ANSI_RESET);
+				System.out.print(ANSI_GREEN + piece + ANSI_RESET);
 			} else {
 				System.out.print(ANSI_YELLOW + piece + ANSI_RESET);
 			}

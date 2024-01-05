@@ -19,7 +19,7 @@ public class Programa {
 		while (true) {
 			try {
 				UI.clearScreen();
-				UI.printBoard(chessMatch.getPieces());
+				UI.printMach(chessMatch);
 				System.out.println();
 				System.out.print("Source:");
 
